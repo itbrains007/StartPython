@@ -12,5 +12,3 @@ while total[1] == False:
     a=input("Введите строку чисел, разделенных пробелом. Если завершили вводб напишите Хорош: ")
     total=sum_func(total[0],a.split())
 print(total[0])
-
-
