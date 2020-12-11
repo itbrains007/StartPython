@@ -7,9 +7,7 @@ while  element != "end":
     element=input("Введите элемент списка. если конец, напишите 'end': ")
 
 while i < len(mainlist)-1:
-    c = mainlist[i]
-    mainlist[i] = mainlist[i+1]
-    mainlist[i + 1] = c
+    mainlist[i],mainlist[i+1] = mainlist[i+1],mainlist[i]
     i=i+2
 print(mainlist)
 
