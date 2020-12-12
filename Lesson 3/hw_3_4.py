@@ -6,20 +6,17 @@ def my_func (arg1, arg2):
     for i in range(abs(arg2)):
         our_exp=our_exp/arg1
     print(f"Возведение в степень через for: {our_exp}")
-    return
-
 
 def my_func_2 (arg1, arg2):
     print(f"Возведение в степень через **: {arg1**arg2}")
-    return
 
 a = input("Введите натуральное число a: ")
 b = input("Введите отрицательное число b: ")
 try:
     a = int(a)
     b = int(b)
-except Exception:
-    print("Необходимо ввести число")
+except Exception as err:
+    print(err)
 else:
     my_func(a,b)
     my_func_2(a,b)

@@ -4,7 +4,6 @@
 
 def int_func_easy(s):
     print(s.title())
-    return
 
 def int_func(s):
     return s.capitalize() + ' '

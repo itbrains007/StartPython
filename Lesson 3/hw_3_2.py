@@ -6,8 +6,9 @@ city_inp=input("Введите город проживания: ")
 email_inp=input("Введите email: ")
 phone_inp=input("Введите телефон: ")
 def personal_info(name, surname, bithday, city, email, phone):
-    print (f"Имя: {name}; Фамилия: {surname}; Дата рождения: {bithday}; Город проживания: {city}; email: {email}; телефон: {phone}")
-    return
+    all_info=''
+    all_info=name+' '+surname+' '+bithday+' '+city+' '+email+' '+phone
+    return all_info
 
-personal_info(surname=surname_inp,name=name_inp,bithday=bithday_inp,city=city_inp,email=email_inp,phone=phone_inp)
+print(personal_info(surname=surname_inp,name=name_inp,bithday=bithday_inp,city=city_inp,email=email_inp,phone=phone_inp))
 
